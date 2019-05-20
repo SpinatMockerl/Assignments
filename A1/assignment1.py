@@ -148,7 +148,7 @@ class Assignment1:
     def get_number_mapped_reads(self):
         bamfile = pysam.AlignmentFile(self.bam_file_name, "rb")
 
-        return(bamfile.mapped) #indexfasta&sort&index before
+        return(bamfile.mapped)
 
     def get_region_of_gene(self):
         region = [self.gene_coordinates[2]]
